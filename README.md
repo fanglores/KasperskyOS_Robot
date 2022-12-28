@@ -1,4 +1,4 @@
-# Kaspersky Hackaton 2022
+# Using webcam control system of a KasperskyOS robot
 #### Moscow Aviation Institute featuring Kaspersky Laboratory hackaton.  
 As part of the Kaspersky summer hackathon, a prototype of a solution for remote control of an IoT device on KasperskyOS via TCP connection was created  
   
@@ -38,8 +38,6 @@ Implementation & advantages:
     ├── .gitignore  
     ├── LICENSE  
     └── README.md                           # you are here
-  
-  
   
 © Tsaturyan Konstantin, Moscow Aviation Institute & Kaspersky Lab  
 Moscow, 2022
