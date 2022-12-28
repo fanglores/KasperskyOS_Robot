@@ -30,9 +30,8 @@ Use case:
     |    |    └── README.md                 # to-do list  
     |    |  
     |    ├── server_GUI/                    # server gui implementation  
-    |    | 
+    |    |  
     |    └── KasperskyOS_client/            # client folder  
-
     |  
     ├── .gitignore  
     ├── LICENSE  
