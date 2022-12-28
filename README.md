@@ -10,7 +10,7 @@ Tasks:
   
   
 ## Use case:  
-![use-case](img_src/use-case.jpg)
+![use-case](img_src/use-case1.jpg)
 Alphabot should follow predefined path (path consists of several line segments) and stop after that.
   
 ## Implementation & advantages:
