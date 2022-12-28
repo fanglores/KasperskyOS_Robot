@@ -12,6 +12,8 @@ Tasks:
 Use case:
 ...
   
+Implementation & advantages:
+...  
   
 #### Quick Access
 [Server folder](source_files/linux_server) - server implementation  
