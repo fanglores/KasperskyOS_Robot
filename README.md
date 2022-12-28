@@ -1,5 +1,17 @@
 # Kaspersky Hackaton 2022
-#### Moscow Aviation Institute featuring Kaspersky Laboratory hackaton.  Task: create robot platform under the Kaspersky Operating System (KasperskyOS), server under the Linux OS. Server is reading image stream from camera, generating commands for robot, sends them via TCP protocol. Server have to detect color marks and lead robot on route, followed all marks.  
+#### Moscow Aviation Institute featuring Kaspersky Laboratory hackaton.  
+As part of the Kaspersky summer hackathon, a prototype of a solution for remote control of an IoT device on KasperskyOS via TCP connection was created  
+  
+Tasks:  
+1. Implement remote connection work with the control program over TCP protocol in one local environment  
+2. Implement the functionality with engine control via GPIO ports  
+3. Implement the functionality of recognizing the robot and its targets  
+4. Create an algorithm for controlling the robot through an external camera  
+  
+  
+Use case:
+...
+  
   
 #### Quick Access
 [Server folder](source_files/linux_server) - server implementation  
@@ -28,5 +40,5 @@
   
   
   
-© fanglores, Moscow Aviation Institute feat. Kaspersky Lab  
+© Tsaturyan Konstantin, Moscow Aviation Institute & Kaspersky Lab  
 Moscow, 2022
