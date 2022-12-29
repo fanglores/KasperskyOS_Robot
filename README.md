@@ -20,11 +20,57 @@ System architecture:
 Neural network is used to recognise bot:  
 ![neu-net](img_src/neural-net.jpg)
   
-Features of bot contol application on KasperksyOS:
-1. Implemented functionality related to GPIO, TCP
-2. Implemented PWM signal for working with motors
-3. Implemented the functionality of accepting commands in JSON format
+### Recognition and control software  
+-> https://github.com/fanglores/KasperskyOS_Robot/tree/main/source_files/linux_server  
 
+Is used:  
+Linux, python, opencv
+  
+Program functions:
+- Finding contrasting stickers - implemented (selection of bias labels)  
+- Determination of 2D sticker coordinates - implemented (homography)  
+- Entering a route - not implemented  
+- Formation of control commands for driving Alphabot along the route - not implemented  
+- Transfer of commands from the management server to Alphabot via tcp - implemented  
+  
+The program of control and recognition using a neural network  
+-> https://github.com/fanglores/KasperskyOS_Robot/tree/main/source_files/server_GUI  
+  
+OpenCV 4.6, Tensorflow-CPU 2.9.1, Socket, Numpy, Sympy, Pydantic, Flask 2.0  
+  
+Program functions:  
+- alpahabot recognition - implemented (neural network)  
+- Finding contrasting stickers - implemented (neural network)  
+- Definition of 2D coordinates of stickers - implemented (homography)  
+- Entering a route - implemented  
+- Formation of control commands for driving Alphabot along the route - implemented  
+- Transfer of commands from the management server to Alphabot via tcp - implemented  
+- Debugging and integration testing - not implemented  
+  
+### Alphabot management program for Raspbery PI 4  
+-> https://github.com/fanglores/KasperskyOS_Robot/tree/main/source_files/KasperskyOS_client
+
+Is used:  
+KasperskyOS, C++
+
+Program functions:  
+- Issuing control commands (forward, backward, stop, left, right) to Alphabot motors by GPIO - implemented (implemented PWM functional for motor control)  
+- Driving along a given route (rectangle) - implemented  
+- Receiving commands over the network - implemented  
+- Debugging and integration testing - not implemented  
+  
+Final tests:  
+- Travel along a given fixed route (rectangle) - completed  
+- Driving along the route by commands from the recognition server - not completed  
+  
+Problems:  
+Tasks involving GPIO and network sharing in Kaspersky are not debugged. Caused by errors when writing psl policies.  
+  
+### Features of bot contol application on KasperksyOS:  
+1. Implemented functionality related to GPIO, TCP  
+2. Implemented PWM signal for working with motors  
+3. Implemented the functionality of accepting commands in JSON format  
+  
 ## Quick Access
 [Server folder](source_files/linux_server) - image recognition and bot control server implementation  
 [Client folder](source_files/KasperskyOS_client) - KasperskyOS based Alphabot control program implementation  
