@@ -7,6 +7,7 @@ Tasks:
 2. Implement the functionality with engine control via GPIO ports  
 3. Implement the functionality of recognizing the robot and its targets  
 4. Create an algorithm for controlling the robot through an external camera  
+5. Precise move along predefined path (rectangle)  
   
   
 ## Use case:  
