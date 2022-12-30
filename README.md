@@ -44,7 +44,7 @@ Program functions:
 - Definition of 2D coordinates of stickers - implemented (homography)  
 - Entering a route - implemented  
 - Formation of control commands for driving Alphabot along the route - implemented  
-- Transfer of commands from the management server to Alphabot via tcp - implemented  
+- Transfer of commands from the management server to Alphabot via tcp - not tested  
 - Debugging and integration testing - not implemented  
   
 ### Alphabot management program for Raspbery PI 4  
@@ -56,7 +56,7 @@ KasperskyOS, C++
 Program functions:  
 - Issuing control commands (forward, backward, stop, left, right) to Alphabot motors by GPIO - implemented (implemented PWM functional for motor control)  
 - Driving along a given route (rectangle) - implemented  
-- Receiving commands over the network - implemented  
+- Receiving commands over the network - not tested  
 - Debugging and integration testing - not implemented  
   
 Final tests:  
